@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface FindResultListModel : NSObject
 @property (nonatomic, copy)NSString *ID;//产品ID
 @property (nonatomic, copy)NSString *Name;//
@@ -26,10 +25,6 @@
 
 @property (nonatomic, copy)NSString *MinPrice;//价格范围最小值
 @property (nonatomic, copy)NSString *MaxPrice;//价格范围最大值
-
-@property (nonatomic, copy)NSString *ProductTypeNewName;//左上角标签
-@property (nonatomic, copy)NSString *ProductLevelName;//右下角标签
-
 
 @property (nonatomic, strong)NSMutableDictionary *ShareInfo;
 

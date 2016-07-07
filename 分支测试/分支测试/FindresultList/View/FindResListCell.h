@@ -12,6 +12,6 @@
 @interface FindResListCell : MGSwipeTableCell
 
 @property (nonatomic, strong)FindResultListModel *model;
-@property (nonatomic,copy) NSString *CategoryStr;
+
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 @end

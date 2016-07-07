@@ -20,12 +20,10 @@
     OrderFindResultCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"OrderFindResultCell" owner:nil options:nil] lastObject];
-        // 去掉箭头
-         //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     return cell;
 }
-
 
 - (void)setTitleStr:(NSString *)titleStr{
     _titleStr = titleStr;
@@ -33,10 +31,9 @@
     self.titleL.textColor = [UIColor colorWithRed:102.0/225.0f green:102.0/225.0f blue:102.0/225.0f alpha:1];
 }
 
-#pragma mark 此处设置圆点
 - (void)setContentStr:(NSString *)contentStr{
     _contentStr = contentStr;
-    //self.noLimitL.text = [NSString stringWithFormat:@"%@", contentStr];
+    self.noLimitL.text = [NSString stringWithFormat:@"%@", contentStr];
 
 }
 

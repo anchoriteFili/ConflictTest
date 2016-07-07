@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindResultList">
             <connections>
                 <outlet property="FindEmptyView" destination="OlJ-ON-1zt" id="dZF-JJ-u21"/>
-                <outlet property="HeadScrolView" destination="CQ9-y7-F38" id="Crt-GK-n5b"/>
                 <outlet property="backToTop" destination="zXk-t8-CaO" id="ViV-CA-wRa"/>
                 <outlet property="chooseBtn" destination="Mbq-n9-zol" id="4k9-IF-8tb"/>
-                <outlet property="chooseContentTableView" destination="nta-dI-FJw" id="wCR-XW-23C"/>
                 <outlet property="chooseTableView" destination="doQ-jj-Gkx" id="x99-vp-VyM"/>
                 <outlet property="chooseView" destination="erw-vL-OvY" id="LCd-90-M7F"/>
                 <outlet property="downView" destination="mgP-Ph-5Ju" id="7PH-na-Fch"/>
@@ -19,9 +17,7 @@
                 <outlet property="orderTableView" destination="G8u-03-eL7" id="1FL-Z2-mNy"/>
                 <outlet property="orderView" destination="4Pd-Fk-gVK" id="CAU-KO-dpH"/>
                 <outlet property="resetButton" destination="x9J-1p-KMt" id="BHy-Ar-SVf"/>
-                <outlet property="routeButton" destination="kUs-Yd-kco" id="8hz-MR-epB"/>
                 <outlet property="tableView" destination="pr1-vA-IEW" id="wpZ-QZ-4cU"/>
-                <outlet property="timeButton" destination="Jmp-n8-ZK9" id="lO4-FU-mou"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,39 +27,72 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" tag="99" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pr1-vA-IEW">
-                    <rect key="frame" x="0.0" y="45" width="320" height="435"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="430"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
+                <view contentMode="scaleToFill" id="mgP-Ph-5Ju">
+                    <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mbq-n9-zol">
+                            <rect key="frame" x="30" y="5" width="100" height="40"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-20" minY="25" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="2" maxX="0.0" maxY="15"/>
+                            <state key="normal" title="筛选" image="chooseGray">
+                                <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" image="chooseBlue"/>
+                            <connections>
+                                <action selector="chooseBtn:" destination="-1" eventType="touchUpInside" id="gSF-sY-SrM"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" id="iSk-FA-095">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <color key="backgroundColor" red="0.66315498738484846" green="0.66315498738484846" blue="0.66315498738484846" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kmX-0H-bOK">
+                            <rect key="frame" x="190" y="5" width="100" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-20" minY="25" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="2" maxX="0.0" maxY="15"/>
+                            <state key="normal" title="排序" image="orderGray">
+                                <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" image="orderBlue"/>
+                            <connections>
+                                <action selector="orderBtn:" destination="-1" eventType="touchUpInside" id="3TB-OU-db4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
                 <view hidden="YES" tag="77" contentMode="scaleToFill" id="erw-vL-OvY">
-                    <rect key="frame" x="0.0" y="127" width="320" height="353"/>
+                    <rect key="frame" x="0.0" y="140" width="320" height="290"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" id="zJN-4J-ofa">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NpR-OS-9du">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="筛选" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NpR-OS-9du">
                                     <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.081794507575757569" green="0.081794507575757569" blue="0.081794507575757569" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eqh-cD-qI3">
-                                    <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="取消">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x9J-1p-KMt">
-                                    <rect key="frame" x="125" y="7" width="64" height="28"/>
+                                    <rect key="frame" x="125" y="5" width="70" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
-                                    <color key="backgroundColor" red="1" green="0.46666666666666667" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                    <state key="normal" title="重置删选">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="重置">
+                                        <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="resetBtn:" destination="-1" eventType="touchUpInside" id="rE6-mQ-7Jt"/>
@@ -72,8 +101,8 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gV8-cB-zTV">
                                     <rect key="frame" x="240" y="0.0" width="80" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="backgroundColor" red="1" green="0.3312887391255277" blue="0.13622998754102278" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <state key="normal" title="确定">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -82,29 +111,37 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.93335700755353534" green="0.93335700755353534" blue="0.93335700755353534" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
                         <tableView clipsSubviews="YES" tag="999" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="doQ-jj-Gkx">
-                            <rect key="frame" x="0.0" y="41.5" width="92" height="324.5"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES"/>
-                            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="sectionIndexBackgroundColor" red="0.55890003610000005" green="1" blue="0.45404918280000001" alpha="1" colorSpace="calibratedRGB"/>
-                        </tableView>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nta-dI-FJw">
-                            <rect key="frame" x="92" y="41.5" width="228" height="324.5"/>
+                            <rect key="frame" x="0.0" y="40" width="320" height="250"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                            <color key="backgroundColor" red="0.52241055240000001" green="0.4324899411" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </tableView>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" id="4Pd-Fk-gVK">
-                    <rect key="frame" x="0.0" y="277" width="320" height="203"/>
+                    <rect key="frame" x="0.0" y="240" width="320" height="190"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <subviews>
+                        <view contentMode="scaleToFill" id="KDi-eF-kuf">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="排序" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LYp-9f-R1G">
+                                    <rect key="frame" x="20" y="0.0" width="50" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="0.37386791174878919" green="0.38225912973608683" blue="0.40743278369797986" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93335700759999995" green="0.93335700759999995" blue="0.93335700759999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
                         <tableView clipsSubviews="YES" tag="9999" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="G8u-03-eL7">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <rect key="frame" x="0.0" y="40" width="320" height="150"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </tableView>
                     </subviews>
@@ -146,106 +183,6 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="CQ9-y7-F38">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                </scrollView>
-                <view contentMode="scaleToFill" id="mgP-Ph-5Ju">
-                    <rect key="frame" x="0.0" y="430" width="320" height="50"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" id="Mbq-n9-zol">
-                            <rect key="frame" x="160" y="5" width="80" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <inset key="titleEdgeInsets" minX="-20" minY="25" maxX="0.0" maxY="0.0"/>
-                            <inset key="imageEdgeInsets" minX="31" minY="4" maxX="32" maxY="19"/>
-                            <state key="normal" title="筛选" image="shaiXuan">
-                                <color key="titleColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <state key="selected">
-                                <color key="titleColor" red="0.0" green="0.45882352939999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="chooseBtn:" destination="-1" eventType="touchUpInside" id="gSF-sY-SrM"/>
-                            </connections>
-                        </button>
-                        <view contentMode="scaleToFill" id="iSk-FA-095">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                            <color key="backgroundColor" red="0.66315498738484846" green="0.66315498738484846" blue="0.66315498738484846" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kmX-0H-bOK">
-                            <rect key="frame" x="240" y="5" width="80" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <inset key="titleEdgeInsets" minX="-20" minY="25" maxX="0.0" maxY="0.0"/>
-                            <inset key="imageEdgeInsets" minX="32" minY="4" maxX="31" maxY="20"/>
-                            <state key="normal" title="综合排序" image="zongHePaiXu">
-                                <color key="titleColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <state key="selected">
-                                <color key="titleColor" red="0.0" green="0.45882352941176469" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="orderBtn:" destination="-1" eventType="touchUpInside" id="3TB-OU-db4"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kUs-Yd-kco">
-                            <rect key="frame" x="0.0" y="5" width="80" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <inset key="titleEdgeInsets" minX="-20" minY="25" maxX="0.0" maxY="0.0"/>
-                            <inset key="imageEdgeInsets" minX="30" minY="4" maxX="30" maxY="19"/>
-                            <state key="normal" title="游玩路线" image="youWanLuXian">
-                                <color key="titleColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <state key="selected">
-                                <color key="titleColor" red="0.0" green="0.45882352939999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="routeButtonClick:" destination="-1" eventType="touchUpInside" id="eMP-h1-GkZ"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jmp-n8-ZK9">
-                            <rect key="frame" x="80" y="5" width="80" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <inset key="titleEdgeInsets" minX="-20" minY="25" maxX="0.0" maxY="0.0"/>
-                            <inset key="imageEdgeInsets" minX="31" minY="4" maxX="31" maxY="20"/>
-                            <state key="normal" title="时间天数" image="shiJianTianShu">
-                                <color key="titleColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <state key="selected">
-                                <color key="titleColor" red="0.0" green="0.45882352939999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="timeButtonClick:" destination="-1" eventType="touchUpInside" id="Ktl-aV-fSW"/>
-                            </connections>
-                        </button>
-                        <view contentMode="scaleToFill" id="AaE-cb-HbI">
-                            <rect key="frame" x="80" y="5" width="1" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
-                            <color key="backgroundColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
-                        <view contentMode="scaleToFill" id="BpZ-R9-EEY">
-                            <rect key="frame" x="159" y="5" width="1" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
-                            <color key="backgroundColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
-                        <view contentMode="scaleToFill" id="Arj-rL-zqV">
-                            <rect key="frame" x="240" y="5" width="1" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
-                            <color key="backgroundColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
-                    </subviews>
-                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -254,11 +191,11 @@
     </objects>
     <resources>
         <image name="F_empty" width="121" height="140"/>
-        <image name="shaiXuan" width="21" height="21"/>
+        <image name="chooseBlue" width="21" height="21"/>
+        <image name="chooseGray" width="21" height="21"/>
+        <image name="orderBlue" width="25" height="22"/>
+        <image name="orderGray" width="25" height="22"/>
         <image name="shangjiana" width="17" height="18"/>
-        <image name="shiJianTianShu" width="21" height="21"/>
         <image name="tuoyuana" width="44" height="44"/>
-        <image name="youWanLuXian" width="24" height="21"/>
-        <image name="zongHePaiXu" width="21" height="21"/>
     </resources>
 </document>
