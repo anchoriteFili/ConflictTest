@@ -19,13 +19,12 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     /**
-     提交一次：
-     提交二次：
-     提交三次：
-     +++++++++
-     提交四次：
-     提交五次：
-     提交六次：
+    删除了次数
+     */
+    
+    
+    /**
+     添加了hehehehehehehehe
      */
     
     
