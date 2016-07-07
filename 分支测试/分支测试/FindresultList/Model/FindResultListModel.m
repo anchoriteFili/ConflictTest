@@ -32,6 +32,9 @@
         
         self.MinPrice = dic[@"MinPrice"];
         self.MaxPrice = dic[@"MaxPrice"];
+        self.ProductLevelName = dic[@"ProductLevelName"];
+        self.ProductTypeNewName = dic[@"ProductTypeNewName"];
+        
         self.ShareInfo = dic[@"ShareInfo"];
 //         [self setValuesForKeysWithDictionary:dic];
         [self setValuesForKeysWithDictionary:[NSMutableDictionary cleanNullResult:dic]];
