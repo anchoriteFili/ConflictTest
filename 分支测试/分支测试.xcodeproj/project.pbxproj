@@ -15,6 +15,27 @@
 		FA8728F11D2E5A3900FB4C52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8728EF1D2E5A3900FB4C52 /* LaunchScreen.storyboard */; };
 		FA8728FC1D2E5A3900FB4C52 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8728FB1D2E5A3900FB4C52 /* ____Tests.m */; };
 		FA8729071D2E5A3900FB4C52 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729061D2E5A3900FB4C52 /* ____UITests.m */; };
+		FA8729391D2E709E00FB4C52 /* Find_ChooseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729161D2E709E00FB4C52 /* Find_ChooseVC.m */; };
+		FA87293A1D2E709E00FB4C52 /* Find_ChooseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8729171D2E709E00FB4C52 /* Find_ChooseVC.xib */; };
+		FA87293B1D2E709E00FB4C52 /* Find_PriceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729191D2E709E00FB4C52 /* Find_PriceVC.m */; };
+		FA87293C1D2E709E00FB4C52 /* Find_PriceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA87291A1D2E709E00FB4C52 /* Find_PriceVC.xib */; };
+		FA87293D1D2E709E00FB4C52 /* FindResultList.m in Sources */ = {isa = PBXBuildFile; fileRef = FA87291C1D2E709E00FB4C52 /* FindResultList.m */; };
+		FA87293E1D2E709E00FB4C52 /* FindResultList.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA87291D1D2E709E00FB4C52 /* FindResultList.xib */; };
+		FA87293F1D2E709E00FB4C52 /* conditionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729201D2E709E00FB4C52 /* conditionModel.m */; };
+		FA8729401D2E709E00FB4C52 /* FindResultListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729221D2E709E00FB4C52 /* FindResultListModel.m */; };
+		FA8729411D2E709E00FB4C52 /* textStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729241D2E709E00FB4C52 /* textStyle.m */; };
+		FA8729421D2E709E00FB4C52 /* UIButton+InitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729261D2E709E00FB4C52 /* UIButton+InitButton.m */; };
+		FA8729431D2E709E00FB4C52 /* ChooseContentTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729291D2E709E00FB4C52 /* ChooseContentTVCell.m */; };
+		FA8729441D2E709E00FB4C52 /* ChooseContentTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA87292A1D2E709E00FB4C52 /* ChooseContentTVCell.xib */; };
+		FA8729451D2E709E00FB4C52 /* Find_BottomCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA87292C1D2E709E00FB4C52 /* Find_BottomCustomTVCell.m */; };
+		FA8729461D2E709E00FB4C52 /* Find_BottomCustomTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA87292D1D2E709E00FB4C52 /* Find_BottomCustomTVCell.xib */; };
+		FA8729471D2E709E00FB4C52 /* Find_BottomDateTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA87292F1D2E709E00FB4C52 /* Find_BottomDateTVCell.m */; };
+		FA8729481D2E709E00FB4C52 /* Find_BottomDateTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8729301D2E709E00FB4C52 /* Find_BottomDateTVCell.xib */; };
+		FA8729491D2E709E00FB4C52 /* Find_PriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729321D2E709E00FB4C52 /* Find_PriceCell.m */; };
+		FA87294A1D2E709E00FB4C52 /* Find_PriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8729331D2E709E00FB4C52 /* Find_PriceCell.xib */; };
+		FA87294B1D2E709E00FB4C52 /* FindResListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729351D2E709E00FB4C52 /* FindResListCell.m */; };
+		FA87294C1D2E709E00FB4C52 /* OrderFindResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8729371D2E709E00FB4C52 /* OrderFindResultCell.m */; };
+		FA87294D1D2E709E00FB4C52 /* OrderFindResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8729381D2E709E00FB4C52 /* OrderFindResultCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +72,40 @@
 		FA8729021D2E5A3900FB4C52 /* 分支测试UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "分支测试UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8729061D2E5A3900FB4C52 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		FA8729081D2E5A3900FB4C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8729151D2E709E00FB4C52 /* Find_ChooseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Find_ChooseVC.h; sourceTree = "<group>"; };
+		FA8729161D2E709E00FB4C52 /* Find_ChooseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Find_ChooseVC.m; sourceTree = "<group>"; };
+		FA8729171D2E709E00FB4C52 /* Find_ChooseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Find_ChooseVC.xib; sourceTree = "<group>"; };
+		FA8729181D2E709E00FB4C52 /* Find_PriceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Find_PriceVC.h; sourceTree = "<group>"; };
+		FA8729191D2E709E00FB4C52 /* Find_PriceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Find_PriceVC.m; sourceTree = "<group>"; };
+		FA87291A1D2E709E00FB4C52 /* Find_PriceVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Find_PriceVC.xib; sourceTree = "<group>"; };
+		FA87291B1D2E709E00FB4C52 /* FindResultList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindResultList.h; sourceTree = "<group>"; };
+		FA87291C1D2E709E00FB4C52 /* FindResultList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindResultList.m; sourceTree = "<group>"; };
+		FA87291D1D2E709E00FB4C52 /* FindResultList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindResultList.xib; sourceTree = "<group>"; };
+		FA87291F1D2E709E00FB4C52 /* conditionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conditionModel.h; sourceTree = "<group>"; };
+		FA8729201D2E709E00FB4C52 /* conditionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = conditionModel.m; sourceTree = "<group>"; };
+		FA8729211D2E709E00FB4C52 /* FindResultListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindResultListModel.h; sourceTree = "<group>"; };
+		FA8729221D2E709E00FB4C52 /* FindResultListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindResultListModel.m; sourceTree = "<group>"; };
+		FA8729231D2E709E00FB4C52 /* textStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textStyle.h; sourceTree = "<group>"; };
+		FA8729241D2E709E00FB4C52 /* textStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = textStyle.m; sourceTree = "<group>"; };
+		FA8729251D2E709E00FB4C52 /* UIButton+InitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+InitButton.h"; sourceTree = "<group>"; };
+		FA8729261D2E709E00FB4C52 /* UIButton+InitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+InitButton.m"; sourceTree = "<group>"; };
+		FA8729281D2E709E00FB4C52 /* ChooseContentTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseContentTVCell.h; sourceTree = "<group>"; };
+		FA8729291D2E709E00FB4C52 /* ChooseContentTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseContentTVCell.m; sourceTree = "<group>"; };
+		FA87292A1D2E709E00FB4C52 /* ChooseContentTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseContentTVCell.xib; sourceTree = "<group>"; };
+		FA87292B1D2E709E00FB4C52 /* Find_BottomCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Find_BottomCustomTVCell.h; sourceTree = "<group>"; };
+		FA87292C1D2E709E00FB4C52 /* Find_BottomCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Find_BottomCustomTVCell.m; sourceTree = "<group>"; };
+		FA87292D1D2E709E00FB4C52 /* Find_BottomCustomTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Find_BottomCustomTVCell.xib; sourceTree = "<group>"; };
+		FA87292E1D2E709E00FB4C52 /* Find_BottomDateTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Find_BottomDateTVCell.h; sourceTree = "<group>"; };
+		FA87292F1D2E709E00FB4C52 /* Find_BottomDateTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Find_BottomDateTVCell.m; sourceTree = "<group>"; };
+		FA8729301D2E709E00FB4C52 /* Find_BottomDateTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Find_BottomDateTVCell.xib; sourceTree = "<group>"; };
+		FA8729311D2E709E00FB4C52 /* Find_PriceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Find_PriceCell.h; sourceTree = "<group>"; };
+		FA8729321D2E709E00FB4C52 /* Find_PriceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Find_PriceCell.m; sourceTree = "<group>"; };
+		FA8729331D2E709E00FB4C52 /* Find_PriceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Find_PriceCell.xib; sourceTree = "<group>"; };
+		FA8729341D2E709E00FB4C52 /* FindResListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindResListCell.h; sourceTree = "<group>"; };
+		FA8729351D2E709E00FB4C52 /* FindResListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindResListCell.m; sourceTree = "<group>"; };
+		FA8729361D2E709E00FB4C52 /* OrderFindResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFindResultCell.h; sourceTree = "<group>"; };
+		FA8729371D2E709E00FB4C52 /* OrderFindResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFindResultCell.m; sourceTree = "<group>"; };
+		FA8729381D2E709E00FB4C52 /* OrderFindResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderFindResultCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +156,7 @@
 		FA8728E01D2E5A3900FB4C52 /* 分支测试 */ = {
 			isa = PBXGroup;
 			children = (
+				FA8729141D2E709E00FB4C52 /* FindresultList */,
 				FA8728E41D2E5A3900FB4C52 /* AppDelegate.h */,
 				FA8728E51D2E5A3900FB4C52 /* AppDelegate.m */,
 				FA8728E71D2E5A3900FB4C52 /* ViewController.h */,
@@ -138,6 +194,63 @@
 				FA8729081D2E5A3900FB4C52 /* Info.plist */,
 			);
 			path = "分支测试UITests";
+			sourceTree = "<group>";
+		};
+		FA8729141D2E709E00FB4C52 /* FindresultList */ = {
+			isa = PBXGroup;
+			children = (
+				FA8729151D2E709E00FB4C52 /* Find_ChooseVC.h */,
+				FA8729161D2E709E00FB4C52 /* Find_ChooseVC.m */,
+				FA8729171D2E709E00FB4C52 /* Find_ChooseVC.xib */,
+				FA8729181D2E709E00FB4C52 /* Find_PriceVC.h */,
+				FA8729191D2E709E00FB4C52 /* Find_PriceVC.m */,
+				FA87291A1D2E709E00FB4C52 /* Find_PriceVC.xib */,
+				FA87291B1D2E709E00FB4C52 /* FindResultList.h */,
+				FA87291C1D2E709E00FB4C52 /* FindResultList.m */,
+				FA87291D1D2E709E00FB4C52 /* FindResultList.xib */,
+				FA87291E1D2E709E00FB4C52 /* Model */,
+				FA8729271D2E709E00FB4C52 /* View */,
+			);
+			path = FindresultList;
+			sourceTree = "<group>";
+		};
+		FA87291E1D2E709E00FB4C52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA87291F1D2E709E00FB4C52 /* conditionModel.h */,
+				FA8729201D2E709E00FB4C52 /* conditionModel.m */,
+				FA8729211D2E709E00FB4C52 /* FindResultListModel.h */,
+				FA8729221D2E709E00FB4C52 /* FindResultListModel.m */,
+				FA8729231D2E709E00FB4C52 /* textStyle.h */,
+				FA8729241D2E709E00FB4C52 /* textStyle.m */,
+				FA8729251D2E709E00FB4C52 /* UIButton+InitButton.h */,
+				FA8729261D2E709E00FB4C52 /* UIButton+InitButton.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA8729271D2E709E00FB4C52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA8729281D2E709E00FB4C52 /* ChooseContentTVCell.h */,
+				FA8729291D2E709E00FB4C52 /* ChooseContentTVCell.m */,
+				FA87292A1D2E709E00FB4C52 /* ChooseContentTVCell.xib */,
+				FA87292B1D2E709E00FB4C52 /* Find_BottomCustomTVCell.h */,
+				FA87292C1D2E709E00FB4C52 /* Find_BottomCustomTVCell.m */,
+				FA87292D1D2E709E00FB4C52 /* Find_BottomCustomTVCell.xib */,
+				FA87292E1D2E709E00FB4C52 /* Find_BottomDateTVCell.h */,
+				FA87292F1D2E709E00FB4C52 /* Find_BottomDateTVCell.m */,
+				FA8729301D2E709E00FB4C52 /* Find_BottomDateTVCell.xib */,
+				FA8729311D2E709E00FB4C52 /* Find_PriceCell.h */,
+				FA8729321D2E709E00FB4C52 /* Find_PriceCell.m */,
+				FA8729331D2E709E00FB4C52 /* Find_PriceCell.xib */,
+				FA8729341D2E709E00FB4C52 /* FindResListCell.h */,
+				FA8729351D2E709E00FB4C52 /* FindResListCell.m */,
+				FA8729361D2E709E00FB4C52 /* OrderFindResultCell.h */,
+				FA8729371D2E709E00FB4C52 /* OrderFindResultCell.m */,
+				FA8729381D2E709E00FB4C52 /* OrderFindResultCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +356,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA87294A1D2E709E00FB4C52 /* Find_PriceCell.xib in Resources */,
+				FA87294D1D2E709E00FB4C52 /* OrderFindResultCell.xib in Resources */,
+				FA87293A1D2E709E00FB4C52 /* Find_ChooseVC.xib in Resources */,
 				FA8728F11D2E5A3900FB4C52 /* LaunchScreen.storyboard in Resources */,
 				FA8728EE1D2E5A3900FB4C52 /* Assets.xcassets in Resources */,
+				FA8729441D2E709E00FB4C52 /* ChooseContentTVCell.xib in Resources */,
 				FA8728EC1D2E5A3900FB4C52 /* Main.storyboard in Resources */,
+				FA8729481D2E709E00FB4C52 /* Find_BottomDateTVCell.xib in Resources */,
+				FA87293C1D2E709E00FB4C52 /* Find_PriceVC.xib in Resources */,
+				FA8729461D2E709E00FB4C52 /* Find_BottomCustomTVCell.xib in Resources */,
+				FA87293E1D2E709E00FB4C52 /* FindResultList.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +391,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8729391D2E709E00FB4C52 /* Find_ChooseVC.m in Sources */,
+				FA87294B1D2E709E00FB4C52 /* FindResListCell.m in Sources */,
 				FA8728E91D2E5A3900FB4C52 /* ViewController.m in Sources */,
+				FA87293F1D2E709E00FB4C52 /* conditionModel.m in Sources */,
+				FA87293B1D2E709E00FB4C52 /* Find_PriceVC.m in Sources */,
+				FA8729411D2E709E00FB4C52 /* textStyle.m in Sources */,
+				FA87293D1D2E709E00FB4C52 /* FindResultList.m in Sources */,
+				FA8729491D2E709E00FB4C52 /* Find_PriceCell.m in Sources */,
+				FA8729401D2E709E00FB4C52 /* FindResultListModel.m in Sources */,
 				FA8728E61D2E5A3900FB4C52 /* AppDelegate.m in Sources */,
 				FA8728E31D2E5A3900FB4C52 /* main.m in Sources */,
+				FA8729431D2E709E00FB4C52 /* ChooseContentTVCell.m in Sources */,
+				FA87294C1D2E709E00FB4C52 /* OrderFindResultCell.m in Sources */,
+				FA8729471D2E709E00FB4C52 /* Find_BottomDateTVCell.m in Sources */,
+				FA8729451D2E709E00FB4C52 /* Find_BottomCustomTVCell.m in Sources */,
+				FA8729421D2E709E00FB4C52 /* UIButton+InitButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
